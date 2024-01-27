@@ -18,7 +18,9 @@ export default function LastOrders() {
                     </tr>
 
                     {lastOrders.map((item, index) => (
-                        <tr className="table--row">
+                        <tr
+                            className="table--row"
+                            key={index}>
                             <td className="name">
                                 <Image
                                     src={`/images/${item.img}`}
@@ -43,6 +45,7 @@ export default function LastOrders() {
                                     src={'/images/invoice.svg'}
                                     width={16}
                                     height={16}
+                                    alt=""
                                 />
                                 View
                             </td>

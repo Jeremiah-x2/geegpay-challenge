@@ -8,7 +8,9 @@ export default function TopPlatform() {
             </div>
             <div className="platforms">
                 {platforms.map((item, index) => (
-                    <div className="platform">
+                    <div
+                        className="platform"
+                        key={index}>
                         <h4>{item.name}</h4>
                         <PriceBar
                             value={item.value / 10000}

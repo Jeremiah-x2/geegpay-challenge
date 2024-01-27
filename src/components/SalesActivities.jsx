@@ -22,6 +22,7 @@ export default function SalesActivities(props) {
                         }
                         width={104}
                         height={32}
+                        alt=""
                     />
                 </div>
             </div>

@@ -32,7 +32,7 @@ export default function Sidebar({ setDarkMode }) {
         if (window.innerWidth <= 600) {
             setShowsidebarMobile(false);
         }
-    });
+    }, []);
 
     return (
         <SidebarContainer>
@@ -42,6 +42,7 @@ export default function Sidebar({ setDarkMode }) {
                         item={item}
                         setActive={setActive}
                         index={index}
+                        key={index}
                     />
                 ))}
             </div>
@@ -85,6 +86,7 @@ export function Icon({ item, index, setActive }) {
                 src={`/images/${item.img}`}
                 width={32}
                 height={32}
+                alt=""
             />
         </IconContainer>
     );

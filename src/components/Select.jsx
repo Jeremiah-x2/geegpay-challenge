@@ -15,7 +15,7 @@ export default function Select() {
     useEffect(() => {
         const ul = document.querySelector('.select');
         setOptionsList(ul);
-    });
+    }, []);
 
     return (
         <CustomSelect showmenu={showMenubool}>
